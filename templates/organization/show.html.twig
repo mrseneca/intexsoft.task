@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Organizations{% endblock %}
+
+{% block body %}
+    <h1>{{org.name}}</h1>
+    <h6>{{ "ОГРН: " ~ org.ogrn }}</h6>
+    <h6>{{ "ОКТМО: " ~ org.oktmo }}</h6>
+{% endblock %}
