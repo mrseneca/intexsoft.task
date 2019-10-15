@@ -3,15 +3,22 @@
 namespace App\Controller;
 
 use App\Entity\Organization;
+use App\Entity\User;
 use App\Repository\OrganizationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * Class OrganizationController
+ * @package App\Controller
+ * @Route("/", name="organizations.")
+ */
+
 class OrganizationController extends AbstractController
 {
     /**
-     * @Route("/organizations", name="organizations")
+     * @Route("/", name="index")
      * @param OrganizationRepository $organizationRepository
      * @return Response
      */
@@ -25,14 +32,17 @@ class OrganizationController extends AbstractController
     }
 
     /**
-     * @Route("/organizations/{id}", name="show")
-     * @param Organization $organization
+     * @Route("/{id}", name="show")
+     * @param $id
      * @return Response
      */
-    public function show(Organization $organization) {
-        dump($organization->getUser());
+    public function show($id) {
+        $organization = $this->getDoctrine()->getRepository('App\Entity\Organization')->find($id);
+        $users = $organization->getUser();
+
         return $this->render('organization/show.html.twig', [
-            'org'=> $organization
+            'org'=> $organization,
+            'users'=> $users
         ]);
     }
 }

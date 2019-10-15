@@ -48,6 +48,7 @@ class User
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Organization", inversedBy="user")
+     * @ORM\JoinColumn(name="organization_id", referencedColumnName="id")
      */
     private $organization;
 
@@ -138,5 +139,11 @@ class User
         $this->organization = $organization;
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        // TODO: Implement __toString() method.
+        return $this->birthdate;
     }
 }

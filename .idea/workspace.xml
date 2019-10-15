@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ac88c52-9c0b-4681-9600-b30029f6b4a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/OrganizationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/organization/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/organization/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/intexsoft.task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/intexsoft.task.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/OrganizationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrganizationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Organization.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Organization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/organization/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/organization/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/organization/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/organization/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +131,9 @@
       <option name="presentableId" value="Default" />
       <updated>1571049775726</updated>
       <workItem from="1571049776895" duration="414000" />
-      <workItem from="1571050229224" duration="5247000" />
+      <workItem from="1571050229224" duration="7695000" />
+      <workItem from="1571121811823" duration="1484000" />
+      <workItem from="1571123337367" duration="1432000" />
     </task>
     <servers />
   </component>
@@ -148,7 +145,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

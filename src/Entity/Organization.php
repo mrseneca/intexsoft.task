@@ -34,7 +34,7 @@ class Organization
     private $oktmo;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="category")
+     * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="organization")
      */
     private $user;
 

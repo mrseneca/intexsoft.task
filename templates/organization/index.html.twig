@@ -21,7 +21,7 @@
         {% for org in orgs %}
             <tr>
                 <td>{{ org.id }}</td>
-                <td>{{ org.name }}</td>
+                <td><a href="{{ path('organizations.show', {id: org.id}) }}">{{ org.name }}</a></td>
                 <td>{{ org.ogrn }}</td>
                 <td>{{ org.oktmo }}</td>
             </tr>
