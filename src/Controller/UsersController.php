@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserType;
+use App\Form\XmlType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -35,9 +36,26 @@ class UsersController extends AbstractController
         }
 
         return $this->render('users/create.html.twig', [
-            'form'=>$form->createView()
+            'form'=>$form->createView(),
+            'title'=>'Добавление нового пользователя'
         ]);
     }
+
+    /**
+     * @Route("/createfromxml", name="createfromxml")
+     * @param Request $request
+     * @return Response
+     */
+    public function createFromXml(Request $request) {
+        $form = $this->createForm(XmlType::class);
+        $form->handleRequest($request);
+
+        return $this->render('users/create.html.twig', [
+            'form'=>$form->createView(),
+            'title'=>'Загрузка XML-файла'
+        ]);
+    }
+
     /**
      * @Route("/{id}", name="show")
      * @param User $user
