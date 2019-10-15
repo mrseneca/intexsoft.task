@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UsersController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row justify-content-left">
+            <div class="col-sm-8">
+                <h1><a href="{{ path('organizations.index') }}">Организации</a> > <a href="{{ path("organizations.show", {id: user.organization.id}) }}">{{ user.organization.name }}</a> > {{ user.lastname ~ ' ' ~ user.firstname ~ ' ' ~ user.middlename}}</h1>
+            </div>
+        </div>
+        <div class="row justify-content-left">
+            <div class="col-sm-3 text-dark">
+                <h6>{{ "Дата рождения: " ~ user.birthdate|date('d.m.Y') }}</h6>
+            </div>
+        </div>
+        <div class="row justify-content-left">
+            <div class="col-sm-2 text-info">
+                <h6>{{ "ИНН: " ~ user.inn }}</h6>
+            </div>
+            <div class="col-sm-2 text-info">
+                <h6>{{ "СНИЛС: " ~ user.snils }}</h6>
+            </div>
+        </div>
+    </div>
+{% endblock %}
