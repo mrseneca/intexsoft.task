@@ -3,11 +3,23 @@
 {% block title %}Organizations{% endblock %}
 
 {% block body %}
-    <h1><a href="{{ path('organizations.index') }}">{{org.name}}</a></h1>
-    <h6>{{ "ОГРН: " ~ org.ogrn }}</h6>
-    <h6>{{ "ОКТМО: " ~ org.oktmo }}</h6>
-
-    <h2>Список сотрудников</h2>
+    <div class="container">
+        <div class="row justify-content-left">
+            <div class="col-sm-4">
+                <h1><a href="{{ path('organizations.index') }}">{{org.name}}</a></h1>
+            </div>
+        </div>
+        <div class="row justify-content-left">
+            <div class="col-sm-2 text-info">
+                <h6>{{ "ОГРН: " ~ org.ogrn }}</h6>
+            </div>
+            <div class="col-sm-2 text-info">
+                <h6>{{ "ОКТМО: " ~ org.oktmo }}</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <h4>Список сотрудников</h4>
         <table class="table table-striped">
             <thead>
             <tr>
@@ -15,9 +27,7 @@
                 <td>Фамилия</td>
                 <td>Имя</td>
                 <td>Отчество</td>
-                <td>Дата рождения</td>
-                <td>ИНН</td>
-                <td>СНИЛС</td>
+                <td>Действия</td>
             </tr>
             <tbody>
             {% for user in users %}
@@ -26,12 +36,11 @@
                     <td>{{ user.lastname }}</td>
                     <td>{{ user.firstname }}</td>
                     <td>{{ user.middlename }}</td>
-                    <td>{{ user.birthdate|date('d.m.Y') }}</td>
-                    <td>{{ user.inn }}</td>
-                    <td>{{ user.snils }}</td>
+                    <td><a href="{{ path('user.show') }}">Просмотреть</a></td>
                 </tr>
             {% endfor %}
             </tbody>
             </thead>
         </table>
+    </div>
 {% endblock %}

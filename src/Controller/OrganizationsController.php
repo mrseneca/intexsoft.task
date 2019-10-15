@@ -10,12 +10,12 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * Class OrganizationController
+ * Class OrganizationsController
  * @package App\Controller
  * @Route("/", name="organizations.")
  */
 
-class OrganizationController extends AbstractController
+class OrganizationsController extends AbstractController
 {
     /**
      * @Route("/", name="index")
@@ -32,7 +32,7 @@ class OrganizationController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="show")
+     * @Route("/organizations/{id}", name="show")
      * @param $id
      * @return Response
      */
