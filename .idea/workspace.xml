@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ac88c52-9c0b-4681-9600-b30029f6b4a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/file.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/08532bb652ec3dfef99f14cce30964a4.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/25968f52877a04a92d2897f7dfb9dd2c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/277b1a53f8621914cb142cbf69e2fcb6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/2c4aee90efef61e57c669c4f963f975f.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/66b069de8059fbf27d6e46f1aab33481.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/87c580818cefa4b4b466a649bd77acfe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/8937d897b8eb579f7cc2672dca8f3751.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/93c2105809199c19192cdd5dffab4d92.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191016084346.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20191016094546.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Organization.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Organization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/XmlType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/XmlType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/organization/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/organization/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/organization/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/organization/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/users/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/create.html.twig" afterDir="false" />
     </list>

@@ -15,7 +15,8 @@ class XmlType extends AbstractType
     {
         $builder
             ->add('xml', FileType::class, [
-            'attr'=>['accept'=>'application/xml']
+                'attr'=>['accept'=>'application/xml'],
+                'label'=> 'Выберите файл для загружки'
             ])
             ->add('save', SubmitType::class,[
                 'attr'=>['class'=>'brn btn-success float-right'],

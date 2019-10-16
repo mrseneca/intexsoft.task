@@ -39,7 +39,8 @@ class UserType extends AbstractType
                 'label'=>'СНИЛС'
             ])
             ->add('organization', EntityType::class, [
-                'class'=>Organization::class
+                'class'=>Organization::class,
+                'label'=>'Организация'
             ])
             ->add('save', SubmitType::class,[
                 'attr'=>['class'=>'brn btn-success float-right'],

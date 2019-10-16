@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<orgs>
+	<org displayName="ООО Краснознаменск" ogrn="9697567955367" oktmo="34586905567">
+		<user firstname="Василий" middlename="Иванович" lastname="Пупкин" inn="8947493759347894" snils="9762738648233" />
+		<user firstname="Виталий" middlename="Петрович" lastname="Швабрин" inn="8947493345457894" snils="9762345358233"  />
+	</org>
+	<org displayName="ООО Серп и молот" ogrn="9693453534747" oktmo="34585645567">
+		<user firstname="Александр" middlename="Сергеевич" lastname="Пушкин" inn="8947345345354894" snils="7667877898233"  />
+	</org>
+</orgs>
